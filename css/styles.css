@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+#title {
+    background-color: #ff4c68;
+    color: #fff;
+}
+
+.container-fluid {
+    padding: 3% 15% 7%;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 3.5rem;
+    line-height: 1.5;
+}
+
+/* Navigation Bar */
+.navbar {
+    padding: 0 0 4.5rem;
+}
+
+.navbar-brand {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.nav-item {
+    padding: 0 18px;
+}
+
+.nav-link {
+    font-size: 1.2rem;
+    font-weight: lighter;
+}
+
+/* Download Buttons */
+.download-btn {
+    margin: 5% 3% 5% 0;
+}
+
+/* Title Image */
+.img-contain {
+    display: flex;
+}
+
+.title-image {
+    width: 60%;
+    transform: rotate(25deg);
+    position: absolute;
+    right: 30%;
+}
+
+/* Features */
+#features {
+    padding-bottom: 60px;
+    background-color: #fff;
+    position: relative;
+}
+
+.features-item {
+    text-align: center;
+    padding: 5%;
+}
+
+.features-icon {
+    font-size: 3.5rem;
+    color: #ef8172;
+    margin: 80px 0 20px;
+}
+
+.features-icon:hover {
+    cursor: pointer;
+    color: #ff4c68;
+}
+
+.features-item h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.features-item p {
+    color: #8f8f8f;
+}
+
+/* Testimanial Section */
+#testimonials {
+    background-color: #ef8172;
+    color: #fff;
+    text-align: center;
+}
+
+#testimonials h2 {
+    font-weight: bold;
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+.testimonial-image {
+    width: 10%;
+    border-radius: 100%;
+    margin: 20px;
+}
+
+#press {
+    background-color: #ef8172;
+    text-align: center;
+    padding: 3%;
+}
+
+.press-logo {
+    width: 15%;
+    margin: 0 20px 50px;
+}
+
+/* Carousel */
+.carousel-item {
+    padding: 7% 15%;
+}
+
+/* Pricing Section */
+#pricing {
+    text-align: center;
+    padding: 7% 10%;
+}
+
+#pricing > h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #444;
+}
+
+#pricing p {
+    color: #8f8f8f;
+}
+
+.pricing-item {
+    padding: 3% 2%;
+}
+
+.pricing-item h3 {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #444;
+}
+
+.pricing-item h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #444;
+}
+
+/* Call to Action Section */
+#cta {
+    text-align: center;
+    background-color: #ff4c68;
+    padding: 7% 15%;
+}
+
+#cta h3 {
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 1.5;
+    color: #fff;
+}
+
+/* Footer Section */
+#footer {
+    text-align: center;
+    background-color: #fff;
+    padding: 7% 15%;
+}
+
+.footer-social-media {
+    padding-bottom: 20px;
+}
+
+.footer-social-media-icon {
+    padding: 10px;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.footer-social-media-icon:hover {
+    opacity: 1;
+}
+
+.copyright {
+    color: #8f8f8f;
+}
+
+@media (max-width: 1028px) {
+    .container-fluid {
+        padding-bottom: 80px;
+    }
+
+    #title {
+        text-align: center;
+    }
+
+    .title-image {
+        margin: 20px auto 0;
+        position: static;
+        transform: rotate(0deg);
+    }
+
+    .footer-social-media-icon {
+        padding: 10px;
+        margin: 0 5px;
+    }
+}
+
+@media (max-width: 740px) {
+    .heading-mobile {
+        font-size: 2.5rem;
+    }
+    .container-fluid {
+        padding-top: 0px;
+        padding-bottom: 46px;
+    }
+    .navbar {
+        padding: 0 0 2.5rem;
+    }
+    h1 {
+        font-size: 3rem;
+    }
+    .download-btn {
+        width: 100%;
+    }
+    .title-image {
+        width: 80%;
+    }
+    #features {
+        padding-bottom: 0px;
+    }
+    .features-item {
+        padding: 0 5%;
+    }
+    .carousel-item, #cta {
+        padding: 12% 15%;
+    }
+    .press-logo {
+        width: 24%;
+    }
+    .press-logo:nth-child(1), .press-logo:nth-child(2) {
+        margin-top: 28px;
+    }
+    #testimonials h2, #pricing > h2 {
+        font-size: 2.5rem;
+    }
+    #pricing {
+        padding: 12% 10%;
+    }
+}
